@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Infrolabs | About</title>
+    
+    
+    <style>
+    /* Style for our header texts
+	* --------------------------------------- */
+
+
+
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section1{
+		background-image: url(images/about-section-1.png);
+	}
+	#section2{
+		background-image: url(images/about-section-2.png);
+	}
+	#section3{
+		background-image: url(images/about-section-3.png);
+	}
+    #section4{
+		background-image: url(images/about-section-4.png);
+	}
+        
+        #pp-nav {
+    display: block;
+}
+        
+        .border-corner:after {
+    bottom: 0;
+    right: 0;
+}
+          .border-corner:before {
+    top: 0;
+    left: 0;
+}
+        .center-block {
+    width: calc(100% - 25rem);
+    height: calc(100% - 17.5rem);
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #070836cc;
+            transition: 0.3s ease
+}
+        .center-block.show-border{
+            width: calc(100% - 10rem);
+    height: calc(100% - 10rem);
+            overflow: hidden;
+        }
+        
+        .about-text{
+                max-width: 900px;
+    padding: 0 20px;
+    line-height: 1.7;
+        }
+        
+        #pp-nav > ul > li:nth-child(4) span:after{
+            content: none;
+        }
+        
+        #pp-nav > ul > li{
+        display: none
+    }
+    #pp-nav > ul > li:nth-child(1),
+    #pp-nav > ul > li:nth-child(2),
+    #pp-nav > ul > li:nth-child(3),
+    #pp-nav > ul > li:nth-child(4){
+        display: block
+    }
+        .show-border:after, .show-border::before{
+            opacity: 1;
+        }
+    </style>
+    
+    
+</head>
+<body>
+
+    
+    <div id="pagepiling">
+        <!-- section 1 -->
+	    <div class="section text-shadow show-onload" id="section1">
+	    	<div class="center-block border-corner custom-class" data-class="show-border">
+                <div>
+                    <h2 class="font-Audiowide font-3rem mb-3 custom-class" data-class="animate__animated animate__zoomIn animate__delay-1s half-delay">Our Vision</h2>
+                    <h3 class="about-text custom-class" data-class="animate__animated animate__fadeInUp animate__delay-1s half-delay">We want to be known as the most user friendly yet comprehensive software service provider in Spain</h3>
+                </div>
+            </div>
+            <a href="#next" class="custom-pp animate__animated animate__bounceInUp custom-class" data-class="animate__animated animate__bounceInUp" style="visibility: visible" data-id="1">Scroll Down <i class="fas fa-angle-double-down"></i></a>
+	    </div>
+        <!-- section 2 -->
+	    <div class="section text-shadow" id="section2">
+	    	<div class="center-block border-corner custom-opacity custom-class" data-class=" show-border">
+                <div>
+                    <h2 class="font-Audiowide font-3rem mb-3 custom-class" data-class="animate__animated animate__zoomIn animate__delay-1s half-delay">Our Mission</h2>
+                    <h3 class="about-text custom-class" data-class="animate__animated animate__fadeInUp animate__delay-1s half-delay">To provide our customers with integrated software, market data and service solutions to help them scale, save time and make better decisions</h3>
+                </div>
+            </div>
+            <a href="#next" class="custom-pp custom-class" data-class="animate__animated animate__bounceInUp" data-id="2">Scroll Down <i class="fas fa-angle-double-down"></i></a>
+	    </div>
+        <!-- section 3 -->
+	    <div class="section text-shadow" id="section3">
+	    	<div class="center-block border-corner custom-class" data-class=" show-border">
+                <div>
+                    <h2 class="font-Audiowide font-3rem mb-3 custom-class" data-class="animate__animated animate__zoomIn animate__delay-1s half-delay">Our Values</h2>
+                    <h3 class="about-text custom-class" data-class="animate__animated animate__fadeInUp animate__delay-1s half-delay" >Our greatest asset is our team. We love and support our colleagues and operate without hierarchy.</h3>
+                </div>
+            </div>
+            <a href="#next" class="custom-pp custom-class" data-class="animate__animated animate__bounceInUp" data-id="3">Scroll Down <i class="fas fa-angle-double-down"></i></a>
+	    </div>
+        <!-- section 4 -->
+        <div class="section text-shadow" id="section4">
+	    	<div class="center-block border-corner custom-class" data-class=" show-border">
+                <div>
+                    <h2 class="font-Audiowide font-3rem mb-3 custom-class" data-class="animate__animated animate__zoomIn animate__delay-1s half-delay">About Infrolabs</h2>
+                    <h3 class="about-text custom-class" data-class="animate__animated animate__fadeInUp animate__delay-1s half-delay">Our company was founded to serve the growing need for reliable development solutions for small and medium scale enterprises in Spain. The main objective is to assume the role of a leading provider of high-quality products and services amongst Startups and PYMEs. Our company currently has over 20 employees serving clients in Dubai, New York, Hyderabad & we are headquartered in Madrid, Spain.</h3>
+                </div>
+            </div>
+<!--            <a href="#next" class="custom-pp" data-id="4">Scroll Down <i class="fas fa-angle-double-down"></i></a>-->
+	    </div>
+
+        <!-- section 9 -->
+        <div class="section text-left hide-pp-nav">
+	    	<div class="bg-blue footer-1">
+                <div class="container-fluid h-100">
+                    <div class="row align-items-center h-100">
+                        <div class="col-md-12">
+                            <h3 class="py-4">Let’s Discuss Your Next Big Idea.</h3>
+                            
+                            
+                            <a href="contact.html" class="font-Audiowide text-light">
+                                <h2 class="underline animate_box">Chat with us</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-2">
+                <div class="container-fluid h-100">
+                    <footer class="row align-items-center h-100">
+                        <div class="col-6 my-3">
+                            <img src="images/logo-blue.png" class="img-fluid footer-logo">
+                        </div>
+                        <div class="col-6 my-3 text-right">
+                            <a href="https://www.linkedin.com/" target="_blank" class="mr-1">
+                                <img class="footer-icon" src="images/linkedin.png">
+                            </a>
+                            <a href="https://facebook.com/" target="_blank" class="mr-1">
+                                <img class="footer-icon" src="images/facebook.png">
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img class="footer-icon" src="images/instagram.png">
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 text-center text-md-left">
+                            <p>
+                                <a href="#." class="text-dark font-weight-bold">&copy; Infrolabs 2020.</a> 
+                                <a href="#." class="text-dark"><small>Privacy Policy.</small></a> 
+                                <a href="#." class="text-dark"><small>Cookies Policy.</small></a>
+                            </p>
+                        </div>
+                        <div class="col-xl-8 col-lg-6 col-md-6 text-center text-md-right">
+                            <p>
+                                <a href="#." class="text-dark font-weight-bold mr-2 d-block d-xl-inline-block">
+                                    <i class="fas fa-envelope"></i> info@infrolabs.com
+                                </a> 
+                                <a href="#." class="text-dark font-weight-bold mr-2 d-block d-xl-inline-block">
+                                    <i class="fas fa-phone-alt"></i> (+34) 633 77 69 67
+                                </a> 
+                                <a href="#." class="text-dark font-weight-bold d-block d-xl-inline-block">
+                                    <i class="fas fa-map-marker-alt"></i> C/ Maria Molina 56, Madrid 28006, ES
+                                </a>
+                            </p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <!-- end sections -->
+	    </div>
+        
+	</div>
+    
+    
+    
+<!--    side navbar   -->
+
+    <div class="sidenav-cont">
+        <div id="open-nav">
+            <div class="open-nav-btn">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+
+        <div class="sidenav">
+            <a href="index.html">
+                <img class="img-fluid sidenav-logo" src="images/logo-white.png">
+            </a>
+            <nav>
+                <div>
+                    <div class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+        
+<!--    page preloder -->
+    <div id="pageLoader">
+        <div class="spinner"></div>
+    </div>
+    
+<!-- jquery -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- bootstap -->
+<script src="js/bootstrap.min.js"></script>
+<!--pagepiling animation-->
+<script src="js/jquery.pagepiling.min.js"></script>
+<!--wow animation-->
+<script src="js/wow.js"></script>
+<!-- box reveal animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js"></script>
+<!-- custom js -->
+<script src="js/functions.js"></script>
+</body>
+</html>
