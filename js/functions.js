@@ -355,19 +355,7 @@ jQuery(function ($) {
         var sectionId = $(this).data("id");
         $("#pp-nav > ul li").eq(sectionId).children().click();
     })
-    var setView=true;
-    $(window).scroll(function(){
-        var ifView = isScrolledIntoView("#contact-btn");
-        
-        if(ifView && setView){
-            animateText()
-            setView = false;
-        }else{
-           if(!ifView){
-               setView = true;
-           }
-        }
-    })
+    
     
     
     
@@ -401,16 +389,7 @@ jQuery(function ($) {
         }, 1200);
     });
     
-   function isScrolledIntoView(elem)
-{
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
     
     
     

@@ -501,5 +501,36 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js"></script>
 <!-- custom js -->
 <script src="js/functions.js"></script>
+    
+    
+    <script>
+    var setView=true;
+    $(window).scroll(function(){
+        var ifView = isScrolledIntoView("#contact-btn");
+        
+        if(ifView && setView){
+            animateText()
+            setView = false;
+        }else{
+           if(!ifView){
+               setView = true;
+           }
+        }
+    })
+        
+           function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+    
+    </script>
+    
+    
 </body>
 </html>
