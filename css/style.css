@@ -195,6 +195,22 @@ header {
             justify-content: center;
             align-items: center;
         }
+.hover-after-image{
+        position: absolute;
+    z-index: 3;
+    opacity: 0;
+    transition: 0.3s all;
+}
+.side-image-absolute.image2:hover .hover-after-image{opacity: 1}
+.side-image-absolute.image2:hover .hover-before-image{opacity: 0}
+
+.hover-before-image{
+    transition: 0.3s all
+}
+
+
+
+
         .max-width-500{
             max-width: 500px;
         }
