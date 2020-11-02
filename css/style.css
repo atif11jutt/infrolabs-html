@@ -441,7 +441,7 @@ header {
     justify-content: center;
     flex-direction: column;
     position: fixed;
-    top: 2rem;
+    top: calc(2rem + 10px);
     right: 2rem;
     z-index: 1001;
 }
@@ -843,4 +843,40 @@ textarea.form-control {
         white-space: normal !important;
         width: 100%;
     }
+    .section h1 {
+    font-size: 3em !important;
+    color: #fff;
+}
+    .active-border.border-corner:before {
+    top: 3rem !important;
+    left: 3rem !important;
+    opacity: 1;
+}
+    .active-border.border-corner:after {
+    bottom: 3rem !important;
+    right: 3rem !important;
+    opacity: 1;
+}
+    .underline {
+    display: inline-block;
+    position: relative;
+    font-size: 2rem !important;
+}
+}
+
+@media screen and (max-width: 520px) {
+    .animate_box {
+    flex: none;
+    display: inline-block;
+    white-space: normal !important;
+    position: relative;
+}
+    .custom-pp {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: #fff !important;
+    margin-left: -9% !important;
+    font-size: 1rem;
+}
 }

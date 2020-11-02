@@ -85,6 +85,22 @@
         .show-border:after, .show-border::before{
             opacity: 1;
         }
+        @media screen and (max-width: 767px) {
+            .center-block.show-border {
+    width: calc(100% - 5rem) !important;
+    height: calc(100% - 5rem) !important;
+    overflow: hidden;
+}
+            .font-3rem {
+    font-size: 2.5rem !important;
+}
+            .about-text {
+    max-width: 900px;
+    padding: 0 20px;
+    line-height: 1.7;
+    font-size: 1.25rem;
+}
+        }
     </style>
     
     
