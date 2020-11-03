@@ -428,10 +428,14 @@ header {
 .slider {
   height: 100%;
 }
+/*
 .slider div {
   height: 100%;
 }
-
+*/
+.owl-stage{
+    display: flex
+}
 
 
 /* side bar */

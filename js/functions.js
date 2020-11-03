@@ -374,10 +374,12 @@ jQuery(function ($) {
         $('.slider.owl-slider').owlCarousel({
             items: 1,
             singleItem:true,
-            nav: true,
+            nav: false,
             dots: false,
             loop: true,
-            autoPlay: 3000
+            autoplay:true,
+            autoplayTimeout:3000,   
+            smartSpeed: 1000
         });
     }
     
