@@ -186,11 +186,11 @@ header {
     bottom: 0;
 }
         .side-image-absolute.image2{
-            top: -50%;
-            right: 0px;
-            width: 50%;
+            top: -50% !important;
+            right: -20% !important;
+            width: 70% !important;
             bottom: 0;
-            transform: translateY(15%);
+            transform: translateY(10%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -786,11 +786,11 @@ textarea.form-control {
         right: 5% !important;
         width: 45% !important;
     }
-    .side-image-absolute.image2 {
+/*    .side-image-absolute.image2 {*/
 /*        top: -7% !important;*/
-        right: 0% !important;
+/*        right: 0% !important;*/
 /*        width: 60% !important;*/
-    }
+/*    }*/
     .footer-1 {
         height: calc(100vh - 170px) !important;
     }

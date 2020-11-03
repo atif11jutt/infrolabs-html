@@ -285,6 +285,8 @@ jQuery(function ($) {
                     var tempClass = $(this).data("class");
                     $(this).addClass(tempClass).css("visibility", "visible")
                 })
+            $(".show-onload").css("opacity", 1)
+            animateText()
         },700)
     },2000) 
 });
