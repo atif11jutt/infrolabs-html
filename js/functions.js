@@ -286,7 +286,7 @@ jQuery(function ($) {
                     $(this).addClass(tempClass).css("visibility", "visible")
                 })
         },700)
-    },500)
+    },1000)
 });
 
 
