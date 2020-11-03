@@ -277,7 +277,7 @@ jQuery(function ($) {
         });
 
 
-    $(window).load(function() {
+    $(document).ready(function () {
     setTimeout(function(){
         $("#pageLoader").addClass("hidden")
         setTimeout(function(){
