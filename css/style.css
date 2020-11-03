@@ -202,7 +202,7 @@ header {
     transition: 0.3s all;
 }
 .side-image-absolute.image2:hover .hover-after-image{opacity: 1}
-.side-image-absolute.image2:hover .hover-before-image{opacity: 0}
+/*.side-image-absolute.image2:hover .hover-before-image{opacity: 0}*/
 
 .hover-before-image{
     transition: 0.3s all
