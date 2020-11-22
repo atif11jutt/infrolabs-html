@@ -395,6 +395,35 @@ jQuery(function ($) {
     
 
     
+        // form submision
+    
+    $('#send_mail_form').on('submit',function (e) {
+        e.preventDefault();
+        $("button[type='submit']").addClass("disabled")
+        $.ajax({
+            url:"php/process.php",
+            type:'POST',
+            data:new FormData(this),
+            contentType: false,
+            cache: false,
+            processData:false,
+            success:function (data) {
+                console.log('data');
+                console.log(data)
+                $('#send_mail_form')[0].reset();
+                $("#success-response").show();
+                $("button[type='submit']").removeClass("disabled")
+            },
+            error:function (ajax, erstr, errth) {
+                console.log('error');
+                $("#error-response").show();
+                $("button[type='submit']").removeClass("disabled")
+            }
+        });
+    });
+    
+
+    
     
     
 //    end of javascript code

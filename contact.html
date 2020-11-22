@@ -40,12 +40,8 @@ body,html{overflow-y:visible}#open-nav{position:absolute}textarea{min-height:140
 
     <div class="text-light text-left">
 	    	<div class="bg-blue diagonal diagonal-top-right z-index-0">
-                <div class="container-fluid py-3" id="mc_embed_signup">
-                    <form action="https://thegestor.us18.list-manage.com/subscribe/post?u=1ac6202ef729c101cf1d4f0ad&amp;id=8ed90b9ecf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <input type="hidden" name="u" value="1ac6202ef729c101cf1d4f0ad">
-                        <input type="hidden" name="id" value="8ed90b9ecf">
-                        <input type="hidden" name="ht" value="a837e72c11e7add73d6b18692b214c650121b8a7:MTYwNDk1NTg2NS42NTc1">
-                        <input type="hidden" name="mc_signupsource" value="hosted">
+                <div class="container-fluid py-3">
+                    <form method="post" id="send_mail_form">
                         <div class="row">
                             <!-- Heading -->
                             <div class="col-md-6 pb-3">
@@ -60,11 +56,11 @@ body,html{overflow-y:visible}#open-nav{position:absolute}textarea{min-height:140
                             </div>
                             
                             <div class="col-md-4">
-                                <input type="text" class="form-control" required placeholder="Name *" name="NAME">
+                                <input type="text" class="form-control" required placeholder="Name *" name="NAME" id="name">
                             </div>
                             
                             <div class="col-md-4">
-                                <input type="email" class="form-control" required placeholder="Email *" name="EMAIL">
+                                <input type="email" class="form-control" required placeholder="Email *" name="EMAIL" id="email">
                             </div>
                             
                             <div class="col-md-4">
@@ -87,12 +83,9 @@ body,html{overflow-y:visible}#open-nav{position:absolute}textarea{min-height:140
                                 <textarea class="form-control autogrow" placeholder="Project Synopsis" name="PROJECTSYN"></textarea>
                                 
                                 <div id="mce-responses" class="clear">
-                                    <div class="response" id="mce-error-response" style="display:none"></div>
-                                    <div class="response" id="mce-success-response" style="display:none"></div>
-                                </div>    
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1ac6202ef729c101cf1d4f0ad_8ed90b9ecf" tabindex="-1" value=""></div>
+                                    <div class="response" id="error-response" style="display:none">There is some error!</div>
+                                    <div class="response" id="success-response" style="display:none">We'll get back to you shortly!</div>
+                                </div>
                             </div>
                             
                             <!-- submit button -->
@@ -209,8 +202,6 @@ body,html{overflow-y:visible}#open-nav{position:absolute}textarea{min-height:140
 <script src="js/plugins.min.js"></script>
 <!-- custom js -->
 <script src="js/functions.js"></script>
-    
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='NAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[4]='PHONE';ftypes[4]='phone';fnames[2]='LOCATION';ftypes[2]='text';fnames[3]='COMPANY';ftypes[3]='text';fnames[5]='WEBSITE';ftypes[5]='text';fnames[6]='PROJECTSYN';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     
 </body>
 </html>
